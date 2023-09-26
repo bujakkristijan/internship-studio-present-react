@@ -1,8 +1,9 @@
 import React from 'react'
+import './HeaderComponent.min.css'; 
 
 const HeaderComponent = () => {
   return (
-    <div>HeaderComponent</div>
+    <div className='header'>HeaderComponent</div>
   )
 }
 
