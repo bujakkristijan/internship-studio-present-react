@@ -1,10 +1,126 @@
 .header{
-    color: red;
-    font-size: 46px;
-    line-height: 30px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    background-color: green;
+    max-height: 143px; /* nzm sto sam stavio max-height, moze i samo height */
+}
+
+.header-box-2{
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box-1{
+    background-color: var(--header-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 105px;
+    
+}
+
+
+.fa.fa-bars{
+    font-size: 36px;
+    display: none;
+    /* color: var(--language-text-color); */
+}
+
+.fa.fa-times{
+    display: none;
+    color: var(--language-text-color);
+}
+
+
+.language-container{
+    padding-right: 105px;
+}
+
+.language-label{
+    padding-left: 6px;
+    padding-right: 5px;
+    text-decoration: underline;
+    color: var(--language-text-color);
+}
+
+
+.language-label:hover{
+    color: var(--language-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-container{
+    display: flex;
+    /* justify-content: center;
+    align-items: center !important;
+    text-align: center; */
+    height: 100%;
+}
+
+.tab-container-box{
+    /* height: 100%; */
+    border-left: 0.5px solid #88878766;
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+}
+
+.tab-container-box:hover{
+    cursor: pointer;
+}
+
+.tab-box{
+    /* padding: 42px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* border-left: 0.5px solid #88878766; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    
+}
+
+.tab-box.contact{
+    border-right: 0.5px solid #88878766;
+}
+
+.tab-title{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap; /* da ne prelama u novi red */
+    color: var(--title-text-color);
+}
+
+.tab-description{
+    font-family: 'Roboto';
+    color: #474747;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* za velike ekrane stavim da se ne vidi jezik koji sam naknadno dodao preko js za male ekrane u hamburger menu */
+.language-text-container, .language-mobile-container{
+    display: none;
+    
+}
+
+.language-text-container{
+    color: var(--title-text-color);
+}
+
+.language-mobile-container{
+    color: var(--language-text-color);
 }
