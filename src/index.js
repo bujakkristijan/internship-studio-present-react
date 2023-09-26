@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 /* ./kada je na istom nivou, ../ kada treba da izadje iz tekuceg i ode na visi nivo */
-import './styles/index.min.css';
+import './styles/index.min.css'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

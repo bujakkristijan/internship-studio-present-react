@@ -1,5 +1,44 @@
-body {
+/* In SCSS, once you define a variable, its value is set and remains constant throughout the stylesheet. 
+Variables are not meant to be changed dynamically within the stylesheet 
+itself based on conditions like dark mode or light mode. */
+/* ne moze da se menja vrednost varijabli definisane pomocu $ kao sto sam mislio za dark/light mode */
+:root{
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --header-background-color: #D9D9D9;
+  --description-text-color: #474747;
+  --title-text-color: #303030;
+  --language-text-color: #595959;
+  --our-products-background-color: #F4F4F4;
+  --icon-color: #303030;
+  --hamburger-menu-background-color: #dadada;
+  --swiper-background-color: #ffffff;
+  --language-hover-color: #888787;
+}
+
+.dark-mode {
+  --background-color: #212121;
+  --text-color: #ffffff;
+  --header-background-color: #999999;
+  --description-text-color: rgb(207, 207, 207);
+  --title-text-color: white;
+  --language-text-color: rgb(237, 237, 237);
+  --our-products-background-color: #212121;
+  --icon-color: rgb(255, 255, 255);
+  --hamburger-menu-background-color: #4c4c4c;
+  --swiper-background-color: (207, 207, 207);
+}
+
+
+
+*{
   margin: 0;
   padding: 0;
-  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden; /* mislim da ne treba ipak ovo za scroll da se ne pojavljuje, svakako ga nema sad kako sam namestio da je responisve sve */
+  background-color: var(--background-color);
 }

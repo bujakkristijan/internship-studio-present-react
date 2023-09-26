@@ -3,5 +3,5 @@ npm install --save-dev gulp-sass
 npm install --save-dev sass
 
 
-npm install --save-dev gulp gulp-sass gulp-clean gulp-rename
+npm install --save-dev sass gulp gulp-sass gulp-clean gulp-rename
 */

@@ -2,40 +2,44 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
 
-function compileGlobalSCSS() {
-  return gulp
-    .src('./src/styles/index.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/styles'));
-}
+// Paths
+const paths = {
+  styles: {
+    src: 'src/**/*.scss',
+    dest: 'src' // Output to the same src folder
+  }
+};
 
-function compileComponentSCSS() {
+// Compile SCSS to CSS
+function style() {
   return gulp
-    .src('./src/components/**/*.scss') // Match all SCSS files in components
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/components'));
-}
-
-function minifyGlobalCSS() {
-  return gulp
-    .src('./src/styles/index.css')
+    .src(paths.styles.src)
+    .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(cleanCSS())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./src/styles'));
+    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(browserSync.stream());
 }
 
-function minifyComponentCSS() {
-  return gulp
-    .src('./src/components/**/*.css') // Match all CSS files in components
-    .pipe(cleanCSS())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./src/components'));
+// Watch for changes
+function watch() {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
+
+  gulp.watch(paths.styles.src, style);
+  gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./src/**/*.min.css').on('change', browserSync.reload); // Watch min.css files in src folder
 }
 
-function watchFiles() {
-  gulp.watch('./src/styles/index.scss', gulp.series(compileGlobalSCSS, minifyGlobalCSS));
-  gulp.watch('./src/components/**/*.scss', gulp.series(compileComponentSCSS, minifyComponentCSS));
-}
+exports.style = style;
+exports.watch = watch;
 
-exports.default = gulp.series(compileGlobalSCSS, compileComponentSCSS, minifyGlobalCSS, minifyComponentCSS, watchFiles);
+// Default task
+gulp.task('default', gulp.series(style, watch));
