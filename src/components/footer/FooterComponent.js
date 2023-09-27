@@ -15,7 +15,7 @@ const FooterComponent = () => {
                 <div class="footer-contact-box-container">
                     <div class="footer-contact-box-img-text-container">
                         <div class="footer-contact-logo-container">
-                            <img class="image-footer-logo" src={require(".../../images/location-footer-logo.png")} alt="An example PNG image"/>
+                            <img class="image-footer-logo" src={require("../../images/location-footer-logo.png")} alt="An example PNG image"/>
                         </div>
                         <div class="footer-contact-text">
                             Čantavirski put bb 24000 Subotica, Srbija
