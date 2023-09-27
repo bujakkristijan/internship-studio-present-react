@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/internship-studio-present-react/static/css/main.182752e3.css",
-    "main.js": "/internship-studio-present-react/static/js/main.0cf9da8b.js",
+    "main.js": "/internship-studio-present-react/static/js/main.4f26f1d4.js",
     "static/js/787.3f4e64fa.chunk.js": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js",
     "static/media/banner-img-5.png": "/internship-studio-present-react/static/media/banner-img-5.5968092fb34f7809a869.png",
     "static/media/banner-img-4.png": "/internship-studio-present-react/static/media/banner-img-4.dca95fb283d100ffa094.png",
@@ -9,6 +9,7 @@
     "static/media/banner-img-3.png": "/internship-studio-present-react/static/media/banner-img-3.5f8286d2476c259205dd.png",
     "static/media/banner-img-1.png": "/internship-studio-present-react/static/media/banner-img-1.c54d07e0c09f8df35a12.png",
     "static/media/banner-img-2.png": "/internship-studio-present-react/static/media/banner-img-2.a01f18cb41d6fe27b9a1.png",
+    "static/media/more-about-us-image.png": "/internship-studio-present-react/static/media/more-about-us-image.9e0b04508f6d2cd72baf.png",
     "static/media/footer-background-image.png": "/internship-studio-present-react/static/media/footer-background-image.979aa534fead0f5486eb.png",
     "static/media/our-offer-1.png": "/internship-studio-present-react/static/media/our-offer-1.1543949b2c5de870a3c7.png",
     "static/media/our-offer-3.png": "/internship-studio-present-react/static/media/our-offer-3.d06b5441d8d1bedacf60.png",
@@ -18,11 +19,11 @@
     "static/media/logo.svg": "/internship-studio-present-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/internship-studio-present-react/index.html",
     "main.182752e3.css.map": "/internship-studio-present-react/static/css/main.182752e3.css.map",
-    "main.0cf9da8b.js.map": "/internship-studio-present-react/static/js/main.0cf9da8b.js.map",
+    "main.4f26f1d4.js.map": "/internship-studio-present-react/static/js/main.4f26f1d4.js.map",
     "787.3f4e64fa.chunk.js.map": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.182752e3.css",
-    "static/js/main.0cf9da8b.js"
+    "static/js/main.4f26f1d4.js"
   ]
 }
