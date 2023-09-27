@@ -34,7 +34,11 @@ const OurProductsComponent = () => {
     
         if (viewportWidth < 900) {
             setSlidesPerView(1);
-          } else {
+          } 
+        else if(viewportWidth < 1200 && viewportWidth >= 900){
+            setSlidesPerView(3);
+        }
+        else {
             setSlidesPerView(4);
           }
       }
