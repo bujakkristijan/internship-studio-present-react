@@ -69,7 +69,8 @@ const OurProductsComponent = () => {
                     product =>
                     <SwiperSlide className="swiper-our-products" key={product.id}>
                     <div className="our-products-image-container-box">
-                        <img className="image-our-product" src={product.imagePath} alt="An example PNG image"/>
+                        {/* mora require da bi radilo na gh-pages */}
+                        <img className="image-our-product" src ={product.imagePath} alt="An example PNG image"/>
                         <div className="our-products-name">{product.title}</div>   
                     </div>
                     </SwiperSlide>

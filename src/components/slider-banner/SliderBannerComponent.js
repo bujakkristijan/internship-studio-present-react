@@ -24,22 +24,22 @@ const SliderBannerComponent = () => {
                 <img class="swiper-banner-image" src="./images/Video.png" alt="An example PNG image">
             </swiper-slide>  */}
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-2.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-2.png")} alt="An example PNG image"/>
             </SwiperSlide>
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-1.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-1.png")} alt="An example PNG image"/>
             </SwiperSlide>
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-3.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-3.png")} alt="An example PNG image"/>
             </SwiperSlide>
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-4.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-4.png")} alt="An example PNG image"/>
             </SwiperSlide>
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-5.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-5.png")} alt="An example PNG image"/>
             </SwiperSlide>
             <SwiperSlide>
-                <img class="swiper-banner-image" src="../../images/banner-img-6.png" alt="An example PNG image"/>
+                <img class="swiper-banner-image" src={require("../../images/banner-img-6.png")} alt="An example PNG image"/>
             </SwiperSlide>          
         </Swiper>
 

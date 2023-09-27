@@ -54,10 +54,10 @@ const FooterComponent = () => {
                 <div class="footer-socials-container">
                     <div class="footer-socials-text">Pratite nas:</div>
                     <div class="footer-socials-logo-container">
-                        <img class="image-footer-social-logo" src="../../images/facebook-social-logo.png" alt="An example PNG image"/>
-                        <img class="image-footer-social-logo" src="../../images/twitter-social-logo.png" alt="An example PNG image"/>
-                        <img class="image-footer-social-logo" src="../../images/youtube-social-logo.png" alt="An example PNG image"/>
-                        <img class="image-footer-social-logo" src="../../images/messenger-social-logo.png" alt="An example PNG image"/>
+                        <img class="image-footer-social-logo" src={require("../../images/facebook-social-logo.png")} alt="An example PNG image"/>
+                        <img class="image-footer-social-logo" src={require("../../images/twitter-social-logo.png")} alt="An example PNG image"/>
+                        <img class="image-footer-social-logo" src={require("../../images/youtube-social-logo.png")} alt="An example PNG image"/>
+                        <img class="image-footer-social-logo" src={require("../../images/messenger-social-logo.png")} alt="An example PNG image"/>
                     </div>
                 </div>
             </div>

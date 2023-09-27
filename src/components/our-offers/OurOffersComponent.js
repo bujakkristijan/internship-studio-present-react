@@ -8,7 +8,7 @@ const OurOffersComponent = () => {
             <div class="our-offers-box-container">
                 <div class="image-main-container">
                     <div class="image-container">
-                        <img class="image-offer" src="../../images/our-offer-1.png" alt="An example PNG image"/>
+                        <img class="image-offer" src={require("../../images/our-offer-1.png")} alt="An example PNG image"/>
                     </div>
                 </div>
                 
@@ -18,7 +18,7 @@ const OurOffersComponent = () => {
             <div class="our-offers-box-container">
                 <div class="image-main-container">
                     <div class="image-container">
-                        <img class="image-offer" src="../../images/our-offer-2.png" alt="An example PNG image"/>
+                        <img class="image-offer" src={require("../../images/our-offer-2.png")} alt="An example PNG image"/>
                     </div>
                 </div>
                 
@@ -28,7 +28,7 @@ const OurOffersComponent = () => {
             <div class="our-offers-box-container">
                 <div class="image-main-container">
                     <div class="image-container">
-                        <img class="image-offer" src="../../images/our-offer-3.png" alt="An example PNG image"/>
+                        <img class="image-offer" src={require("../../images/our-offer-3.png")} alt="An example PNG image"/>
                     </div>
                 </div>
                 

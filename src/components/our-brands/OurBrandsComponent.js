@@ -16,23 +16,23 @@ const OurBrandsComponent = () => {
                 <div class="our-brands-image-title">Dove</div>
             </div>
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/nivea-brand-logo.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require("../../images/nivea-brand-logo.png")} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Nivea</div>
             </div>
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/palmolive-brand-logo.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require("../../images/palmolive-brand-logo.png")} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Palmolive</div>
             </div>
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/vanish-brand-logo-2.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require("../../images/vanish-brand-logo-2.png")} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Vanish</div>
             </div>
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/ajax-brand-logo.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require("../../images/ajax-brand-logo.png")} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Ajax</div>
             </div>
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/cif-brand-logo.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require("../../images/cif-brand-logo.png")} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Cif</div>
             </div>
         </div>
