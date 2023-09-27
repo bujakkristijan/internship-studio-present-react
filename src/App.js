@@ -6,6 +6,8 @@ import SliderBannerComponent from './components/slider-banner/SliderBannerCompon
 import MoreAboutUsComponent from './components/more-about-us/MoreAboutUsComponent';
 import DistributionComponent from './components/distribution/DistributionComponent';
 import OurOffersComponent from './components/our-offers/OurOffersComponent';
+import DvgNumbersComponent from './components/dvg-numbers/DvgNumbersComponent';
+import OurProductsComponent from './components/our-products/OurProductsComponent';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <MoreAboutUsComponent/>
       <DistributionComponent/>
       <OurOffersComponent/>
+      <DvgNumbersComponent/>
+      <OurProductsComponent/>
       
     </div>
   );
