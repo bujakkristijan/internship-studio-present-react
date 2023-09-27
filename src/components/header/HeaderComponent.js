@@ -116,6 +116,7 @@ const HeaderComponent = () => {
           });
       
           const enableDarkMode = () =>{
+            /* iz body svi nasledjuju 'dark-mode' izgleda, dovoljno je na njega da se dodeli samo */
             body.classList.add('dark-mode');
             // tabTitle.classList.add('dark-mode');
             // offerTitle.classList.add('dark-mode');
