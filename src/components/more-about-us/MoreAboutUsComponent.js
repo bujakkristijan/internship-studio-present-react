@@ -6,7 +6,7 @@ const MoreAboutUsComponent = () => {
     
         <div class="more-about-us-container">
             <div class="more-about-us-box-container">
-                <img class="image-more-about-us" src="../../images/more-about-us-image.png" alt="An example PNG image"/>
+                <img class="image-more-about-us" src={require("../../images/more-about-us-image.png")} alt="An example PNG image"/>
             </div>
             <div class="more-about-us-box-container text-box">
                 <div class="title-more-about-us">

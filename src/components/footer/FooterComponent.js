@@ -6,7 +6,7 @@ const FooterComponent = () => {
     <div class="footer-container">
         <div class="footer-big-row-container">
             <div class="footer-row-box-container">
-                <img class="image-footer-logo" src="../../images/footer-logo.png" alt="An example PNG image"/>
+                <img class="image-footer-logo" src={require("../../images/footer-logo.png")} alt="An example PNG image"/>
             </div>
             <div class="footer-row-box-container">
                 <div class="footer-contact-title">
@@ -15,7 +15,7 @@ const FooterComponent = () => {
                 <div class="footer-contact-box-container">
                     <div class="footer-contact-box-img-text-container">
                         <div class="footer-contact-logo-container">
-                            <img class="image-footer-logo" src=".../../images/location-footer-logo.png" alt="An example PNG image"/>
+                            <img class="image-footer-logo" src={require(".../../images/location-footer-logo.png")} alt="An example PNG image"/>
                         </div>
                         <div class="footer-contact-text">
                             Čantavirski put bb 24000 Subotica, Srbija
@@ -23,7 +23,7 @@ const FooterComponent = () => {
                     </div>
                     <div class="footer-contact-box-img-text-container">
                         <div class="footer-contact-logo-container">
-                            <img class="image-footer-logo" src="../../images/phone-footer-logo.png" alt="An example PNG image"/>
+                            <img class="image-footer-logo" src={require("../../images/phone-footer-logo.png")} alt="An example PNG image"/>
                         </div>
                         <div class="footer-contact-text">
                             +381 24 568 555
@@ -31,7 +31,7 @@ const FooterComponent = () => {
                     </div>
                     <div class="footer-contact-box-img-text-container">
                         <div class="footer-contact-logo-container">
-                            <img class="image-footer-logo" src="../../images/message-footer-logo.png" alt="An example PNG image"/>
+                            <img class="image-footer-logo" src={require("../../images/message-footer-logo.png")} alt="An example PNG image"/>
                         </div>
                         <div class="footer-contact-text">
                             office@dvgcomapny.com
