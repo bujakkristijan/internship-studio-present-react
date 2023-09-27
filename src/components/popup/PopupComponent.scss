@@ -1,4 +1,64 @@
-$color-red: red;
-.popup{
-    color: $color-red;
+/*************************************************************/
+/************** POPUP CONTAINER START ********************/
+/*************************************************************/
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    /* z-index: 1; */
 }
+
+.popup-content {
+    /* nzm kako iz public/images treba da ide putanja, pa sam stavio images u src ipak, mada bi bilo bolje u public da stoji mozda */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../images/distribution-image.png'); 
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 650px;
+    height: 400px;
+}
+
+.popup-title{
+    margin-top: 50px; 
+}
+
+.popup-description{
+    margin-top: 60px; 
+    color: black;
+    z-index: 5;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media(max-width: 900px){
+    .popup-content{
+        width: 300px;
+    }
+
+    .popup-description{
+        margin-top: 20px;
+    }
+}
+
+/*************************************************************/
+/************** POPUP CONTAINER END ********************/
+/*************************************************************/

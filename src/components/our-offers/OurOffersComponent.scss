@@ -1,0 +1,83 @@
+.our-offers-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 4%;
+    padding-bottom: 8%;
+    /* flex-wrap: nowrap; */
+}
+
+.image-main-container{
+    position: relative;
+}
+.image-container:hover{
+    cursor: pointer;
+}
+
+.image-offer {
+    
+    cursor: pointer;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 4px; /* ne znam zasto nece od bottom: 0px da krene od bottom-a same slike, ali ovako bude okej (image-container je veci za 4px od image-offer, nzm sto tacno, proveriti) */
+    /* ako hocu da krece od sredine i da ide ka krajevima */
+    /* left: 50%; */ /* Set the starting position to the middle */
+    /* transform: translateX(-50%); */ /* Center the element horizontally */
+    width: 0%;
+    display: block;
+    /* margin: auto; */
+    height: 10px;
+    background-color: #BF0F0F;
+    transition: 0.3s;
+}
+
+.image-container:hover::after {
+    width: 100%;
+}
+
+
+
+.title-offer{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 12px;
+    color: var(--title-text-color);
+}
+
+.line-offer{
+    background-color: #BF0F0F;
+    height: 2px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+/************* MOBILE SCREEN SIZE OUR OFFERS CONTAINER *************/
+
+@media(max-width: 1330px){
+    .our-offers-container{
+        /* flex-wrap: wrap; */
+    }
+    .image-offer{
+        width: 100%; /* onda zauzme ceo image-container */
+    }
+}
+
+
+@media(max-width: 1330px){
+    .our-offers-container{
+        flex-direction: column; 
+        /* flex-wrap: nowrap; */
+        /* display: flex; */
+    }
+    .our-offers-box-container{
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+
+        /* width: 90%; */
+        
+    }
+}

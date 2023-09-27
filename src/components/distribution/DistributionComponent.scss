@@ -1,0 +1,47 @@
+.image-distribution-container{
+    /* width: 100vw; */
+    width: 100%;
+    height: 650px; /* koliko god height da zadam, lepo ce se prilagoditi slika, nece se poremetiti i razvuci da izgleda neprirodno */
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('../../images/distribution-image.png'); 
+    background-position: center;
+    background-size: cover;
+
+     /*parallax scrolling effect */
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.distribution-text{
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 34px;
+
+    letter-spacing: 8px;
+}
+
+.distribution-text::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #BF0F0F;
+    width: 160px;
+
+    margin-top: 16px;
+    /* preko margina centriram liniju */
+    margin-left: auto; /* Horizontal centering */
+    margin-right: auto; /* Horizontal centering */
+    
+}
+
+/************* MOBILE SCREEN SIZE DISTRIBUTION CONTAINER *************/
+
+@media(max-width: 900px){
+    .distribution-text{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+}
