@@ -13,10 +13,11 @@ import 'swiper/css/navigation';
 const OurProductsComponent = () => {
 
     const [products, setProducts] = useState([]);
+    const [slidesPerView, setSlidesPerView] = useState(4);
 
     useEffect(() => {
-        // register();
-      getProducts();
+        window.addEventListener("resize", updateSlidesPerView);
+        getProducts();
     }, [])
 
 
@@ -27,6 +28,16 @@ const OurProductsComponent = () => {
             console.error("Error getting data", error);
         })
     }
+
+    const updateSlidesPerView = () => {
+        const viewportWidth = window.innerWidth;
+    
+        if (viewportWidth < 900) {
+            setSlidesPerView(1);
+          } else {
+            setSlidesPerView(4);
+          }
+      }
     
 
   return (
@@ -40,41 +51,9 @@ const OurProductsComponent = () => {
                 Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.
             </div>
         </div>
-
-        {/* <swipper-container class="mySwiper-our-products" 
-            slides-per-view="4" centered-slides="false" space-between="30" navigation="true"
-            >
-            
-                    <swipper-slide class="swiper-our-products">
-                    <div className="our-products-image-container-box">
-                        <img className="image-our-product" src="../../images/our-products-2.png" alt="An example PNG image"/>
-                        <div className="our-products-name">NESTO</div>   
-                    </div>
-                    </swipper-slide>
-                    <swipper-slide class="swiper-our-products">
-                    <div className="our-products-image-container-box">
-                        <img className="image-our-product" src="../../images/our-products-2.png" alt="An example PNG image"/>
-                        <div className="our-products-name">NESTO</div>   
-                    </div>
-                    </swipper-slide>
-                    <swipper-slide class="swiper-our-products" >
-                    <div className="our-products-image-container-box">
-                        <img className="image-our-product" src="../../images/our-products-2.png" alt="An example PNG image"/>
-                        <div className="our-products-name">NESTO</div>   
-                    </div>
-                    </swipper-slide>
-                    <swipper-slide class="swiper-our-products">
-                    <div className="our-products-image-container-box">
-                        <img className="image-our-product" src="../../images/our-products-2.png" alt="An example PNG image"/>
-                        <div className="our-products-name">NESTO</div>   
-                    </div>
-                    </swipper-slide>
-              
-            </swipper-container>  */}
-            {/* <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> */}
     
          <Swiper id="mySwiper" className="mySwiper-our-products" 
-            slidesPerView={4}
+            slidesPerView={slidesPerView}
             centeredSlides={false}
             spaceBetween={30}
             navigation ={true}
