@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/internship-studio-present-react/static/css/main.182752e3.css",
+    "main.js": "/internship-studio-present-react/static/js/main.9c951028.js",
+    "static/js/787.3f4e64fa.chunk.js": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js",
+    "static/media/footer-background-image.png": "/internship-studio-present-react/static/media/footer-background-image.979aa534fead0f5486eb.png",
+    "static/media/distribution-image.png": "/internship-studio-present-react/static/media/distribution-image.b531904921d6aa2d6e7d.png",
+    "static/media/dvg-numbers-cover.png": "/internship-studio-present-react/static/media/dvg-numbers-cover.0967c68f72cd1c004296.png",
+    "static/media/logo.svg": "/internship-studio-present-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/internship-studio-present-react/index.html",
+    "main.182752e3.css.map": "/internship-studio-present-react/static/css/main.182752e3.css.map",
+    "main.9c951028.js.map": "/internship-studio-present-react/static/js/main.9c951028.js.map",
+    "787.3f4e64fa.chunk.js.map": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.182752e3.css",
+    "static/js/main.9c951028.js"
+  ]
+}
