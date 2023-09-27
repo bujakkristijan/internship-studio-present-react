@@ -3,17 +3,38 @@ import './HeaderComponent.min.css';
 
 const HeaderComponent = () => {
 
+    // const tabTitle = document.querySelector(".tab-title");
+    // const offerTitle = document.querySelector(".title-offer");
+    // const dvgNumbersTitle = document.querySelector('.dvg-numbers-title');
+    // const dvgNumbersSubTitle = document.querySelector('.dvg-numbers-subtitle');
+    // const ourProductsContainer = document.querySelector('.our-products-container');
+    // const ourProductsTitle = document.querySelector('.our-products-title');
+    // const ourProductsDescription = document.querySelector('.our-products-description');
+    // const ourBrandsTitle = document.querySelector('.our-brands-title');
+    // const ourBrandsImageTitle = document.querySelector('.our-brands-image-title');
+
+    // let hamburgerMenuButton = document.getElementById("hamburger-menu-button");
+    // let xMenuButton = document.getElementById("x-menu-button");
+
+    // ZASTO NE MOZE headerBoxTabContainer da stoji tu odgovor !!!
+    // In React, the component's render method and the creation of the associated DOM 
+    // elements occur after the useEffect hook runs for the first time. 
+    // In your code, you're trying to access headerBoxTabContainer outside of the useEffect hook,
+    // which means that when initializeTabsLanguageIcon is called, the DOM element
+    // with the id "header-box-tab-container" may not exist yet in the document. 
     // const headerBoxTabContainer = document.getElementById("header-box-tab-container");
+    const headerBoxTabContainer = document.getElementById("header-box-tab-container");
+
     const hasInitialized = useRef(false);
     useEffect(() => {
         if (!hasInitialized.current) {
             initializeTabsLanguageIcon();
             hasInitialized.current = true;
           }
+        toggleSwitchMode();
     }, []);
     
-
-    function showMenu() {
+    const showMenu = () => {
         
         const headerBoxTabContainer = document.getElementById("header-box-tab-container");
         headerBoxTabContainer.style.right = "0px";
@@ -21,7 +42,7 @@ const HeaderComponent = () => {
         // document.body.style.overflow = "hidden";
       }
     
-      function hideMenu(){
+    const hideMenu = () => {
        
         const headerBoxTabContainer = document.getElementById("header-box-tab-container");
         headerBoxTabContainer.style.right = "-300px";
@@ -29,7 +50,7 @@ const HeaderComponent = () => {
         // document.body.style.overflow = "hidden";
       }
     
-      function initializeTabsLanguageIcon(){
+      const initializeTabsLanguageIcon = () =>{
         const headerBoxTabContainer = document.getElementById("header-box-tab-container");
         const xIcon = document.querySelector(".fa.fa-times");
       
@@ -66,7 +87,71 @@ const HeaderComponent = () => {
       
         // stavljam languageTextContainer pre languageMobileContainer
         headerBoxTabContainer.insertBefore(languageTextContainer, languageMobileContainer);
+        // toggleSwitchMode();
       }
+
+      const toggleSwitchMode = () =>{
+        const darkModeToggle = document.getElementById('swith-toggle-mode');
+        const body = document.body;
+        //premestio sam ovde da ne bi u konzoli greske ispisivao jer ne postoje na pocetku, vec se kreiraju preko js-a, mada je radilo okej sve 
+        // const languageTitleMobile = document.querySelector('.language-text-container');
+        // const languageTextMobile = document.querySelector('.language-mobile-container');  
+        let isDarkModeEnabled = false;
+      
+          // Check the initial state of the dark mode toggle
+          if (isDarkModeEnabled) {
+            enableDarkMode();
+            darkModeToggle.checked = true;
+          }
+      
+          // Toggle dark mode when the switch is clicked
+          darkModeToggle.addEventListener('change', function () {
+            if (this.checked) {
+                enableDarkMode();
+                isDarkModeEnabled = true;
+            } else {
+                disableDarkMode();
+                isDarkModeEnabled = false;
+            }
+          });
+      
+          const enableDarkMode = () =>{
+            body.classList.add('dark-mode');
+            // tabTitle.classList.add('dark-mode');
+            // offerTitle.classList.add('dark-mode');
+            // dvgNumbersTitle.classList.add('dark-mode');
+            // dvgNumbersSubTitle.classList.add('dark-mode');
+            // ourProductsContainer.classList.add('dark-mode');
+            // hamburgerMenuButton.classList.add('dark-mode');
+            // xMenuButton.classList.add('dark-mode');
+            // languageTitleMobile.classList.add('dark-mode');
+            // languageTextMobile.classList.add('dark-mode');
+            // ourProductsTitle.classList.add('dark-mode');
+            // ourProductsDescription.classList.add('dark-mode');
+            // ourBrandsTitle.classList.add('dark-mode');
+            // ourBrandsImageTitle.classList.add('dark-mode');
+            // headerBoxLogoAndLanguage.classList.add('dark-mode'); /* ne mora ovako svaki posebno, izgleda je dosta na body sto ima classList. Proveriti posle zasto tako radi tacno!!! */ 
+          }
+      
+          const disableDarkMode = () => {
+            body.classList.remove('dark-mode');
+            // tabTitle.classList.remove('dark-mode');
+            // offerTitle.classList.remove('dark-mode');
+            // dvgNumbersTitle.classList.remove('dark-mode');
+            // dvgNumbersSubTitle.classList.remove('dark-mode');
+            // ourProductsContainer.classList.remove('dark-mode');
+            // hamburgerMenuButton.classList.remove('dark-mode');
+            // xMenuButton.classList.remove('dark-mode');
+            // languageTitleMobile.classList.remove('dark-mode');
+            // languageTextMobile.classList.remove('dark-mode');
+            // ourProductsTitle.classList.remove('dark-mode');
+            // ourProductsDescription.classList.remove('dark-mode');
+            // ourBrandsTitle.classList.remove('dark-mode');
+            // ourBrandsImageTitle.classList.remove('dark-mode');
+            // headerBoxLogoAndLanguage.classList.remove('dark-mode');
+          }
+      }
+      
 
   return (
     <header id="header" class="header">
