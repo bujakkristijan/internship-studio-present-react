@@ -12,7 +12,7 @@ const OurBrandsComponent = () => {
         </div>
         <div class="our-brands-image-main-container">
             <div class="our-brands-image-container">
-                <img class="image-our-brand" src="../../images/dove-brand-logo.png" alt="An example PNG image"/>
+                <img class="image-our-brand" src={require('../../images/dove-brand-logo.png')} alt="An example PNG image"/>
                 <div class="our-brands-image-title">Dove</div>
             </div>
             <div class="our-brands-image-container">
