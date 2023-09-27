@@ -8,6 +8,8 @@ import DistributionComponent from './components/distribution/DistributionCompone
 import OurOffersComponent from './components/our-offers/OurOffersComponent';
 import DvgNumbersComponent from './components/dvg-numbers/DvgNumbersComponent';
 import OurProductsComponent from './components/our-products/OurProductsComponent';
+import OurBrandsComponent from './components/our-brands/OurBrandsComponent';
+import FooterComponent from './components/footer/FooterComponent';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <OurOffersComponent/>
       <DvgNumbersComponent/>
       <OurProductsComponent/>
+      <OurBrandsComponent/>
+      <FooterComponent/>
       
     </div>
   );
