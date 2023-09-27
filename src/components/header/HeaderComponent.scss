@@ -200,3 +200,137 @@
 }
 
 /***************** SWITCH TOGGLE END *********************************/
+
+
+/*************************************************************/
+/************** HAMBURGER MENU ********************/
+/*************************************************************/
+
+@media(max-width: 1330px){
+    .tab-box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 900px){
+
+    .swiper-container-banner{
+        margin-top: 80px;
+       
+    }
+
+    .image-logo-company{
+        height: 38px; /* da se smanji logo malo */
+    }
+
+    .language-container{
+        display: none;
+    }
+
+    .logo-container{
+        padding-left: 20px;
+    }
+
+    .header-box-1{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .header{
+        position: relative;
+    }
+
+    .header-box-2{
+        /* display: none; */
+        /* position: absolute; */
+        /* kad je position: fixed, ne mora cak ni overflow-x: hidden na main-container, nestane skrol i bez toga */
+        position: fixed; /* FIXED SAM DODAO UMESTO ABSOLUTE, nakon ovog nema scroll po x osi, moze i da bude absolute i da je roditelj pozicioniran na primer relative ali pojavi se neki skrol na y osi onda nzm sto*/
+        background-color: var(--hamburger-menu-background-color);
+        height: 100vh; /* da zauzme view height, da je 100% bilo bi 100% od parent elementa*/
+        width: 300px;
+        top: 0;
+        /* left: -370px; */
+        right: -300px; /* da se ne vidi, toliki mu je i width, pa ga skloni */
+        /* text-align: left; */
+        z-index: 2; /* da prekrije ostale komponente kada treba da se pojavi*/
+        transition: 1s;
+        /* border-left: 2px solid #625731; */
+        /* display: flex;
+        flex-direction: column; */
+        flex-direction: column;
+    }
+
+    .tab-container{
+        
+        flex-direction: column;
+        width: 100%; /* da linija bude ispod celog container-a */
+        
+    }
+
+    .tab-container-box{
+        border-left: none;
+        border-bottom: 2px solid rgba(53, 53, 53, 0.1);
+    }
+
+    .tab-box{
+        padding: 0;
+    }
+
+    .tab-box.contact{
+        border-right: none;
+    }
+
+    .fa.fa-bars{
+        display: block;
+        margin-right: 24px;
+        color: var(--icon-color);
+    }
+
+    .fa.fa-times{
+        display: block;
+        margin: 10px;
+        font-size: 34px;
+        cursor: pointer;
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: var(--icon-color);
+    }
+
+    .language-text-container{
+        margin-top: 90px;
+        /* margin-right: 120px; */
+        font-size: 24px;
+        display: flex; /* moze i block, po defaultu je none, pa se mora vratiti */
+    }
+
+    .language-mobile-container{
+        margin-top: 20px;
+        display: flex;
+        /* justify-content: center; */
+        gap: 10px;
+        width: 100%; /* kad stavim width 100%, onda krece od pocetka container-a po defaultu, bez njega je centriran */
+        justify-content: center;
+
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(53, 53, 53, 0.3);
+    }
+
+    .language-mobile-text{
+        text-decoration: underline;
+    }
+
+    #header-box-tab-container{
+        /* background-color: var(--description-text-color); */
+    }
+    .tab-title{
+        color: var(--title-text-color);
+    }
+
+    .tab-description{
+        color: var(--description-text-color);
+    }
+}
+
