@@ -23,7 +23,7 @@ const HeaderComponent = () => {
     // which means that when initializeTabsLanguageIcon is called, the DOM element
     // with the id "header-box-tab-container" may not exist yet in the document. 
     // const headerBoxTabContainer = document.getElementById("header-box-tab-container");
-    const headerBoxTabContainer = document.getElementById("header-box-tab-container");
+     
 
     const hasInitialized = useRef(false);
     useEffect(() => {
@@ -35,19 +35,15 @@ const HeaderComponent = () => {
     }, []);
     
     const showMenu = () => {
-        
         const headerBoxTabContainer = document.getElementById("header-box-tab-container");
         headerBoxTabContainer.style.right = "0px";
         headerBoxTabContainer.style.boxShadow = "0 0 0 10000px rgba(0, 0, 0, .50)";
-        // document.body.style.overflow = "hidden";
       }
     
     const hideMenu = () => {
-       
         const headerBoxTabContainer = document.getElementById("header-box-tab-container");
         headerBoxTabContainer.style.right = "-300px";
         headerBoxTabContainer.style.boxShadow = "0 0 0 0 rgba(0,0,0,0)";
-        // document.body.style.overflow = "hidden";
       }
     
       const initializeTabsLanguageIcon = () =>{
@@ -97,12 +93,12 @@ const HeaderComponent = () => {
         // const languageTitleMobile = document.querySelector('.language-text-container');
         // const languageTextMobile = document.querySelector('.language-mobile-container');  
         let isDarkModeEnabled = false;
-      
+
           // Check the initial state of the dark mode toggle
-          if (isDarkModeEnabled) {
-            enableDarkMode();
-            darkModeToggle.checked = true;
-          }
+        //   if (isDarkModeEnabled) {
+        //     enableDarkMode();
+        //     darkModeToggle.checked = true;
+        //   }
       
           // Toggle dark mode when the switch is clicked
           darkModeToggle.addEventListener('change', function () {
