@@ -68,3 +68,27 @@
         width: 330px;
     }
 }
+
+@media(max-width: 600px){
+    .our-offers-container{
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 12%;
+    }
+    .image-offer{
+        width: 100%;
+    }
+}
+
+
+// @media(max-width: 600px){
+//     .image-offer{
+//         width: 280px;
+//     }
+// }
+
+// @media(max-width: 400px){
+//     .image-offer{
+//         width: 240px;
+//     }
+// }

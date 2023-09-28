@@ -97,6 +97,9 @@
 }
 
 @media(max-width: 900px){
+    .dvg-numbers-container{
+        margin-top: 60px;
+    }
     .dvg-numbers-image-container{
         flex-direction: column;
     }
