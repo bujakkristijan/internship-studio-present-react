@@ -24,6 +24,7 @@ const OurProductsComponent = () => {
     const getProducts = () =>{
         DataService.loadProductsFromJSONFile().then(response =>{
             setProducts(response.products);
+            console.log(response.products);
         }).catch((error) =>{
             console.error("Error getting data", error);
         })
@@ -70,6 +71,9 @@ const OurProductsComponent = () => {
                     <SwiperSlide className="swiper-our-products" key={product.id}>
                     <div className="our-products-image-container-box">
                         {/* mora require da bi radilo na gh-pages */}
+                        {/* src = {require(`${product.imagePath}`)} */}
+                        {/* src ={product.imagePath} */}
+                        {/* ovo je putanja sada "imagePath": "/internship-studio-present-react/images/our-products-3.png" */}
                         <img className="image-our-product" src ={product.imagePath} alt="An example PNG image"/>
                         <div className="our-products-name">{product.title}</div>   
                     </div>

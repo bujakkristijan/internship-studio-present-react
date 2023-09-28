@@ -158,7 +158,7 @@ const HeaderComponent = () => {
     <header id="header" class="header">
     <div id="header-logo-language" class="header-box-1">
         <div class="logo-container">
-            <img class="image-logo-company" src="./images/logo.png" alt="An example PNG image"/>
+            <img class="image-logo-company" src={require("../../images/logo.png")} alt="An example PNG image"/>
         </div>
         <div class="switch-container">
             <label class="switch-toggle">

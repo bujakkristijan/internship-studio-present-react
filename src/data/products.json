@@ -4,27 +4,27 @@
         {
             "id": "1",
             "title": "KESE I FOLIJE",
-            "imagePath": "/internship-studio-present-react/images/our-products-1.png"
+            "imagePath": "../../images/our-products-1.png"
         },
         {
             "id": "2",
             "title": "ZA KUHINJU",
-            "imagePath": "/internship-studio-present-react/images/our-products-2.png"
+            "imagePath": "../../images/our-products-2.png"
         },
         {
             "id": "3",
             "title": "UBRUSI I TOALET PAPIRI",
-            "imagePath": "/internship-studio-present-react/images/our-products-3.png"
+            "imagePath": "../../images/our-products-3.png"
         },
         {
             "id": "4",
             "title": "KOZMETIKA",
-            "imagePath": "/internship-studio-present-react/images/our-products-4.png"
+            "imagePath": "../../images/our-products-4.png"
         },
         {
             "id": "5",
             "title": "PLASTICNE KANTE",
-            "imagePath": "/internship-studio-present-react/images/our-products-5.png"
+            "imagePath": "../../images/our-products-5.png"
         }
 
     ]
