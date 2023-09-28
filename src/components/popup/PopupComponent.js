@@ -5,27 +5,40 @@ import './PopupComponent.min.css';
 const PopupComponent = () => {
 
   useEffect(() => {
-    popupMessage();
+    // popupMessage();
+    showPopup();
   }, [])
   
-  const popupMessage = () =>{
-    // Set timeout for displaying popup
+  // const popupMessage = () =>{
+  //   // Set timeout for displaying popup
+  //   setTimeout(function () {
+  //     document.getElementById("popup").style.display = "block";
+  //     document.body.style.overflow = "hidden"; // Disable scrolling
+  // }, 3000); 
+
+  // // Close popup when close button is clicked
+  // document.getElementById("closePopup").addEventListener("click", function () {
+  //     document.getElementById("popup").style.display = "none";
+  //     document.body.style.overflow = "auto"; // Enable scrolling
+  // });
+  // }
+
+  const showPopup = () =>{
     setTimeout(function () {
       document.getElementById("popup").style.display = "block";
       document.body.style.overflow = "hidden"; // Disable scrolling
   }, 3000); 
+  }
 
-  // Close popup when close button is clicked
-  document.getElementById("closePopup").addEventListener("click", function () {
-      document.getElementById("popup").style.display = "none";
-      document.body.style.overflow = "auto"; // Enable scrolling
-  });
+  const closePopup = () =>{
+    document.getElementById("popup").style.display = "none";
+    document.body.style.overflow = "auto"; // Enable scrolling
   }
 
   return (
     <div class="popup-container" id="popup">
         <div class="popup-content">
-            <span class="close-btn" id="closePopup">&times;</span>
+            <span class="close-btn" onClick = {closePopup} id="closePopup">&times;</span>
             <h2 class="popup-title">Dobrodosli</h2>
             <p class="popup-description">
                 Ukoliko danas budete kupovali preko naseg sajta, dobijate dodatni popust od 30%!
