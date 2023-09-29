@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/internship-studio-present-react/static/css/main.fa0a423e.css",
-    "main.js": "/internship-studio-present-react/static/js/main.b5c32952.js",
+    "main.js": "/internship-studio-present-react/static/js/main.b88fccce.js",
     "static/js/787.3f4e64fa.chunk.js": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js",
     "static/media/banner-img-5.png": "/internship-studio-present-react/static/media/banner-img-5.5968092fb34f7809a869.png",
     "static/media/banner-img-4.png": "/internship-studio-present-react/static/media/banner-img-4.dca95fb283d100ffa094.png",
@@ -19,11 +19,11 @@
     "static/media/logo.svg": "/internship-studio-present-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/internship-studio-present-react/index.html",
     "main.fa0a423e.css.map": "/internship-studio-present-react/static/css/main.fa0a423e.css.map",
-    "main.b5c32952.js.map": "/internship-studio-present-react/static/js/main.b5c32952.js.map",
+    "main.b88fccce.js.map": "/internship-studio-present-react/static/js/main.b88fccce.js.map",
     "787.3f4e64fa.chunk.js.map": "/internship-studio-present-react/static/js/787.3f4e64fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa0a423e.css",
-    "static/js/main.b5c32952.js"
+    "static/js/main.b88fccce.js"
   ]
 }
