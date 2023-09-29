@@ -74,13 +74,13 @@ const HeaderComponent = () => {
 
       const enableDarkMode = () =>{
         /* iz body svi nasledjuju 'dark-mode' izgleda, dovoljno je na njega da se dodeli samo */
-        const body = document.body;
-        body.classList.add('dark-mode');
+        // const body = document.body;
+        document.body.classList.add('dark-mode');
       }
 
       const disableDarkMode = () => {
-        const body = document.body;
-        body.classList.remove('dark-mode');
+        // const body = document.body;
+        document.body.classList.remove('dark-mode');
       }
 
       const toggleSwitchMode = () =>{
