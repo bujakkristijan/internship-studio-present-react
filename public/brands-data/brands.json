@@ -1,0 +1,36 @@
+{
+    "brands":
+    [
+        {
+            "id": "1",
+            "title": "Dove",
+            "imagePath": "/internship-studio-present-react/images/dove-brand-logo.png"
+        },
+        {
+            "id": "2",
+            "title": "Nivea",
+            "imagePath": "/internship-studio-present-react/images/nivea-brand-logo.png"
+        },
+        {
+            "id": "3",
+            "title": "Palmolive",
+            "imagePath": "/internship-studio-present-react/images/palmolive-brand-logo.png"
+        },
+        {
+            "id": "4",
+            "title": "Vanish",
+            "imagePath": "/internship-studio-present-react/images/vanish-brand-logo-2.png"
+        },
+        {
+            "id": "5",
+            "title": "Ajax",
+            "imagePath": "/internship-studio-present-react/images/ajax-brand-logo.png"
+        },
+        {
+            "id": "6",
+            "title": "Cif",
+            "imagePath": "/internship-studio-present-react/images/cif-brand-logo.png"
+        }
+
+    ]
+}
