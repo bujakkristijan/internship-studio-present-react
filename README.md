@@ -23,4 +23,5 @@ Initially, I developed the project using Vanilla JS. After completing that phase
 **Initial Vanilla JS project**:
 
 **Vanilla JS Demo**: https://bujakkristijan.github.io/internship-studio-present
+
 **Source code**: https://github.com/bujakkristijan/internship-studio-present
