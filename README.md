@@ -2,7 +2,7 @@
 ### https://bujakkristijan.github.io/internship-studio-present-react/
 
 ### Figma design:
-### https://www.figma.com/file/4DIufzNugRTwWo1d0DUr9i/Praksa?type=design&node-id=1-81&mode=design&t=kdstJLOneS6YJhg2-0
+https://www.figma.com/file/4DIufzNugRTwWo1d0DUr9i/Praksa?type=design&node-id=1-81&mode=design&t=kdstJLOneS6YJhg2-0
 
 I transformed a design from Figma and completed tasks from Trello, which included necessary functionalities for the website, as part of a two-week internship program.
 
