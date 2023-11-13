@@ -20,7 +20,7 @@ Initially, I developed the project using Vanilla JS. After completing that phase
 
 **Technologies**: React (Hooks)/JS, SCSS (Gulp)/CSS, Swiper.js.
 
-**Initial Vanilla JS project**:
+**Initial Vanilla JS project**: https://github.com/bujakkristijan/internship-studio-present
 
 **Vanilla JS Demo**: https://bujakkristijan.github.io/internship-studio-present
 
